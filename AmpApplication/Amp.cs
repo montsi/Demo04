@@ -22,12 +22,12 @@ namespace AmpApplication
                 if (value >= minVolume && value <= maxVolume) volume = value;
                 else if(value < minVolume)
                 {
-                    Console.WriteLine("Too low volume - Amplifier volume is set to minimum : ");
+                    Console.WriteLine("Too low volume");
                     volume = minVolume;
                 }
-                else if (value < maxVolume)
+                else if (value > maxVolume)
                 {
-                    Console.WriteLine("Too much volume - Amplifier volume is set to maximum : ");
+                    Console.WriteLine("Too much volume");
                     volume = maxVolume;
                 }
                 else
